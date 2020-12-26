@@ -1,15 +1,22 @@
 import React from 'react';
+import PropTypes from 'prop-types'
 
-const PrimeraApp = () => {
+const PrimeraApp = ({ saludo, anio }) => {
 
-    const saludo = 'Hola a todos';
+    console.log(saludo)
 
     return (
         <>
-            <h1>{ saludo }</h1>
+            <h1>{ saludo } { anio }</h1>
             {/* <pre>{ JSON.stringify(saludo, null, 3) }</pre> */}
             <p>Aprendiento React...</p>
         </>
     );
 }
+
+PrimeraApp.prototypes = {
+    saludo: PropTypes.string.isRequired,
+    anio: PropTypes.number.isRequired,
+}
+
 export default PrimeraApp;
