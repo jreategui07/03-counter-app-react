@@ -14,7 +14,7 @@ const PrimeraApp = ({ saludo, anio }) => {
     );
 }
 
-PrimeraApp.prototypes = {
+PrimeraApp.propTypes = {
     saludo: PropTypes.string.isRequired,
     anio: PropTypes.number.isRequired,
 }
